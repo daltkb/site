@@ -5,7 +5,6 @@ const App: Component = () => {
     <>
       <div class="mt-16 flex flex-col">
         <h1 class="text-4xl font-bold ">Dalton Bennyhoff</h1>
-        {/* <h1 class="text-5xl font-bold">Bennyhoff</h1> */}
         <h2 class="text-xl">Software Engineer</h2>
       </div>
       <div class="mt-10">
@@ -17,7 +16,18 @@ const App: Component = () => {
           Liverpool FC.
         </p>
       </div>
+      <Footer />
     </>
+  );
+};
+
+const Footer: Component = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer class="border-t-2 mt-4">
+      <p class="py-2">&copy; {currentYear} - Dalton Bennyhoff </p>
+    </footer>
   );
 };
 
