@@ -35,18 +35,18 @@ const Footer: Component = () => {
 
 const Icons: Component = () => {
   return (
-    <div class="mt-2 flex gap-2">
+    <div class="mt-2 flex gap-3">
       <a href="http://twitter.com/daltkb">
-        <SiTwitter size={20} color="#d3d3d3" />
+        <SiTwitter size={20} color="#d3d3d3" title="Twitter" />
       </a>
       <a href="http://github.com/daltkb">
-        <SiGithub size={20} color="#d3d3d3" />
+        <SiGithub size={20} color="#d3d3d3" title="Github" />
       </a>
       <a href="https://linkedin.com/in/daltkb/">
-        <SiLinkedin size={20} color="#d3d3d3" />
+        <SiLinkedin size={20} color="#d3d3d3" title="LinkedIn" />
       </a>
       <a href="mailto:contact@daltkb.com">
-        <SiGmail size={20} color="#d3d3d3" />
+        <SiGmail size={20} color="#d3d3d3" title="Contact Email" />
       </a>
     </div>
   );
