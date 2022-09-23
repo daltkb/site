@@ -8,7 +8,6 @@ const App: Component = () => {
         <h1 class="text-4xl font-bold ">Dalton Bennyhoff</h1>
         <h2 class="text-xl">Software Engineer</h2>
       </div>
-      <Icons />
       <div class="mt-10">
         <h2 class="text-xl py-2 font-medium">About</h2>
         <p>
@@ -37,26 +36,27 @@ const Footer: Component = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer class="border-t-2 mt-4">
+    <footer class="border-t-2 mt-4 flex justify-between align-middle">
       <p class="py-2">&copy; {currentYear} - Dalton Bennyhoff </p>
+      <Icons />
     </footer>
   );
 };
 
 const Icons: Component = () => {
   return (
-    <div class="mt-2 flex gap-3">
+    <div class="mt-2 flex gap-3 pr-2">
       <a href="http://twitter.com/daltkb">
-        <SiTwitter size={20} color="#AE3967" title="Twitter" />
+        <SiTwitter size={22} color="#AE3967" title="Twitter" />
       </a>
       <a href="http://github.com/daltkb">
-        <SiGithub size={20} color="#AE3967" title="Github" />
+        <SiGithub size={22} color="#AE3967" title="Github" />
       </a>
       <a href="https://linkedin.com/in/daltkb/">
-        <SiLinkedin size={20} color="#AE3967" title="LinkedIn" />
+        <SiLinkedin size={22} color="#AE3967" title="LinkedIn" />
       </a>
       <a href="mailto:contact@daltkb.com">
-        <SiGmail size={20} color="#AE3967" title="Contact Email" />
+        <SiGmail size={22} color="#AE3967" title="Contact Email" />
       </a>
     </div>
   );
