@@ -10,12 +10,22 @@ const App: Component = () => {
       </div>
       <Icons />
       <div class="mt-10">
-        <h2 class="text-xl py-2 font-bold">About</h2>
+        <h2 class="text-xl py-2 font-medium">About</h2>
         <p>
           Hi I'm Dalton. I am a software engineer based out of Dallas, TX.
           Before I started writing code; I was a pro-gamer in the Overwatch
           League. In my spare time I enjoy watching hockey and supporting
           Liverpool FC.
+        </p>
+      </div>
+      <div class="mt-10">
+        <h2 class="text-xl py-2 font-medium">Contact</h2>
+        <p>
+          You can reach me on{' '}
+          <a href="https://www.twitter.com/daltkb" class="text-[#AE3967]">
+            Twitter
+          </a>{' '}
+          through DMs.
         </p>
       </div>
       <Footer />
