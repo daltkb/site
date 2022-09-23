@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply text-[#222C33] bg-[#F9F9F9] max-w-xl mx-auto;
+  @apply text-[#222C33] bg-[#F9F9F9] max-w-xl mx-auto px-2;
 }
