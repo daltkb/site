@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js';
 import { SiTwitter, SiGithub, SiLinkedin, SiGmail } from 'solid-icons/si';
-import { TbExternalLink } from 'solid-icons/tb';
+import Project from './components/Project';
 
 const App: Component = () => {
   return (
@@ -72,34 +72,4 @@ const Icons: Component = () => {
   );
 };
 
-interface ProjectProps {
-  name: string;
-  description: string;
-  link: string;
-  tags: string[];
-}
-
-const Project: Component<ProjectProps> = ({
-  name,
-  description,
-  link,
-  tags,
-}: ProjectProps) => {
-  return (
-    <>
-      <div class="flex items-center space-x-1">
-        <h2 class="text-xl">{name}</h2>
-        <a href={link}>
-          <TbExternalLink size={20} />
-        </a>
-      </div>
-      <p>{description}</p>
-      <div class="flex space-x-1">
-        {tags.map((tag) => (
-          <div>{tag}</div>
-        ))}
-      </div>
-    </>
-  );
-};
 export default App;
