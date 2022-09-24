@@ -1,4 +1,4 @@
-import { TbExternalLink } from 'solid-icons/tb';
+import { FiExternalLink } from 'solid-icons/fi';
 import { Component } from 'solid-js';
 
 interface ProjectProps {
@@ -17,9 +17,14 @@ const Project: Component<ProjectProps> = ({
   return (
     <>
       <div class="flex items-center space-x-1">
-        <h2 class="text-xl pb-1">{name}</h2>
+        <h2 class="text-lg pb-1">{name}</h2>
         <a href={link}>
-          <TbExternalLink size={20} />
+          <FiExternalLink
+            title={name}
+            class="pb-1"
+            size={20}
+            color={'#AE3967'}
+          />
         </a>
       </div>
       <p>{description}</p>
