@@ -1,11 +1,13 @@
 import type { Component } from 'solid-js';
 import { SiTwitter, SiGithub, SiLinkedin, SiGmail } from 'solid-icons/si';
 import Project from './components/Project';
+import Alert from './components/Alert';
 
 const App: Component = () => {
   return (
     <>
       <div class="mt-16 flex flex-col">
+        <Alert />
         <h1 class="text-4xl font-bold ">Dalton Bennyhoff</h1>
         <h2 class="text-xl">Software Engineer</h2>
       </div>
